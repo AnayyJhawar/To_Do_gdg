@@ -68,6 +68,6 @@ def history():
 port = int(os.environ.get("PORT", 5000))
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=port)#This is for deployment.
+    app.run(host="0.0.0.0", port=5000)#This is for deployment.
     '''app.debug = True
     app.run()''' #This is for local host.
