@@ -65,6 +65,9 @@ def history():
     completed_tasks = df["Task"].tolist()
     return render_template("history.html", tasks=completed_tasks)
 
+port = int(os.environ.get("PORT", 8000))
+
 if __name__ == "__main__":
-    app.debug = True
-    app.run()
+    app.run(host="0.0.0.0", port=port)#This is for deployment.
+    '''app.debug = True
+    app.run()''' #This is for local host.
