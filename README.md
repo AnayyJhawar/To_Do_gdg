@@ -18,11 +18,17 @@ This app allows users to **add, edit, delete, complete, and view their tasks**, 
 
 ## 📂 Project Structure
 .
+
 ├── main.py # Flask backend
+
 ├── history.csv # Stores completed tasks
+
 ├── templates/
+
 │ ├── index.html # Home page
+
 │ ├── todo.html # To-Do list page
+
 │ └── history.html # Completed tasks history
 
 
